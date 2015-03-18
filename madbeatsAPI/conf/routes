@@ -1,0 +1,12 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# API endpoints
+GET        /               controllers.Application.version
+GET        /version        controllers.Application.version
+GET        /traffic        controllers.Application.traffic
+GET        /twitter        controllers.Application.twitter
+GET        /swarm          controllers.Application.swarm
+GET        /instagram      controllers.Application.instagram
+GET        /flights        controllers.Application.flights

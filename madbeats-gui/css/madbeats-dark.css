@@ -1,0 +1,169 @@
+body {
+  background-color: #111;
+  font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+}
+.building {
+  fill: #333;
+  stroke: #222;
+  stroke-width: 0.2;
+}
+.traffic-cell {
+    stroke: #bebebe;
+    fill: rgba(223, 252, 0, 0.5);
+    fill-opacity: 0;
+    stroke-width: 0.3;
+    stroke-opacity: 0.3;
+}
+.tweet {
+  stroke: none;
+  fill: #209AA3;
+  fill-opacity: 1.0;
+}
+.checkin {
+  stroke: none;
+  fill: #007ed3;
+  fill-opacity: 1.0;
+}
+.flight {
+  stroke: none;
+  fill: #007ed3;
+  fill-opacity: 1.0;
+}
+.photo {
+  stroke: none;
+  fill: #FA00AB;
+}
+.info-border {
+  fill-opacity: 0.85;
+  stroke-opacity: 0.75;
+  fill: #fff;
+  stroke-width: 2;
+}
+.tweet.info-border {
+  stroke: #209AA3;
+}
+.checkin.info-border {
+  stroke: #007ed3;
+}
+.photo.info-border {
+  stroke: #FA00AB;
+}
+.tooltip text,
+.auto-tooltip text {
+  font-size: 10pt;
+  font-weight: 100;
+  fill: #000;
+}
+.tooltip .author,
+.auto-tooltip .author {
+  font-weight: 700;
+}
+.auto-tooltip .tooltip-date {
+    text-anchor: end;
+    font-weight: 100;
+}
+.legend .legendBg {
+    fill: #fff;
+    fill-opacity: 0.1;
+}
+.legend .legendItem text {
+    font-size: 12pt;
+    fill: #fff;
+    font-weight: 100;
+}
+.legend .legendItem .traffic-cell {
+    stroke: none;
+    fill-opacity: 1.0;
+}
+.logo {
+    position: absolute;
+    opacity: 1.0;
+    z-index: 9;
+    width: 25%;
+    margin: 0;
+}
+.logo img {
+    width: 100%;
+}
+.hero-circle {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    position: absolute;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.3),inset 0 1px 2px rgba(255, 255, 255, 0.3);
+    background: url(../img/bg.png) 0 50%;
+    top: 10px;
+    right: 10px;
+}
+.hero-face {
+    width: 100%;
+    height: 100%;
+}
+.hero-face:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin: -3px 0 0 -3px;
+    background: #fff;
+    border-radius: 3px;
+    content: "";
+    display: block;
+}
+.hero-hour {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 -1px -25%;
+    padding: 1px 0 1px 25%;
+    background: #fff;
+    -webkit-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    border-radius: 1px 0 0 1px;
+}
+.hero-minute {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -40% -0.75px 0;
+    padding: 40% 0.75px 0;
+    background: #fff;
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    border-radius: 0.75px 0.75px 0 0;
+}
+.hero-second {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -40% -0.5px 0 0;
+    padding: 40% 0.5px 0;
+    background: #fff;
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+.hero-date {
+    color: #fff;
+    font-weight: 100;
+    font-size: 24px;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 135px;
+    right: 30px;
+}
+.hero-day {
+    font-weight: 600;
+}

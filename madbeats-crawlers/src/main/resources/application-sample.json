@@ -1,0 +1,88 @@
+{
+  "crawlers": {
+    "tweet": {
+      "credentials": {
+        "consumerKey": "",
+        "consumerSecret": "",
+        "accessToken": "",
+        "accessTokenSecret": ""
+      },
+      "filter": {
+        "locations": [
+          -3.962186,
+          40.232493,
+          -3.399137,
+          40.651600
+        ]
+      }
+    },
+    "swarm": {
+      "credentials": {
+        "consumerKey": "",
+        "consumerSecret": "",
+        "accessToken": "",
+        "accessTokenSecret": ""
+      },
+      "filter": {
+        "track": [
+          "swarmapp"
+        ],
+        "locations": [
+          -3.962186,
+          40.232493,
+          -3.399137,
+          40.651600
+        ]
+      },
+      "foursquare": {
+        "clientId": "",
+        "clientSecret": "",
+        "version": "20140510"
+      }
+    },
+    "traffic": {
+      "uri": "http://informo.munimadrid.es/informo/tmadrid/pm.xml"
+    },
+    "flight": {
+      "uri": "http://planefinder.net/endpoints/update.php?faa=1&routetype=iata&bounds=38.758087%2C-6.087579%2C42.006181%2C-1.951227"
+    },
+    "instagram": {
+      "credentials": {
+        "clientId": "",
+        "clientSecret": "",
+        "accessToken": ""
+      },
+      "location": {
+        "lat": 40.418889,
+        "lng": -3.691944,
+        "radius": 5000
+      }
+    }
+  },
+  "persistence": {
+    "uri": "elasticsearch://127.0.0.1:9300",
+    "index": "madbeats",
+    "shards": 5,
+    "replicas": 1
+  },
+  "akka": {
+    "loggers": ["akka.event.slf4j.Slf4jLogger"],
+    "loglevel": "ERROR",
+    "actor": {
+      "default-dispatcher": {
+        "throughput": 10,
+        "executor": "thread-pool-executor",
+        "thread-pool-executor": {
+          "keep-alive-time": "20s",
+          "core-pool-size-min": 8,
+          "core-pool-size-factor": 3.0,
+          "core-pool-size-max": 64,
+          "task-queue-size": -1,
+          "task-queue-type": "linked",
+          "allow-core-timeout": "on",
+          "shutdown-timeout": "1s"
+        }
+      }
+    }
+  }
+}

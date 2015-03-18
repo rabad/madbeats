@@ -1,0 +1,165 @@
+body {
+  background-color: #fafafa;
+  font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+}
+.building {
+  fill: #ececec;
+  stroke: #bbb;
+  stroke-width: 0.2;
+}
+.traffic-cell {
+  stroke: none;
+  fill: #1BBC9B;
+  fill-opacity: 0;
+}
+.tweet {
+  stroke: none;
+  fill: #00467F;
+  fill-opacity: 1.0;
+}
+.checkin {
+  stroke: none;
+  fill: #FF5500;
+  fill-opacity: 1.0;
+}
+.flight {
+  stroke: none;
+  fill: #FF5500;
+  fill-opacity: 1.0;
+}
+.photo {
+  stroke: none;
+  fill: #FF009F;
+}
+.info-border {
+  fill-opacity: 0.85;
+  stroke-opacity: 0.75;
+  fill: #fff;
+  stroke-width: 2;
+}
+.tweet.info-border {
+  stroke: #00467F;
+}
+.checkin.info-border {
+  stroke: #FF5500;
+}
+.photo.info-border {
+  stroke: #FF009F;
+}
+.tooltip text,
+.auto-tooltip text {
+  font-size: 8pt;
+  font-weight: 100;
+  fill: #000;
+}
+.tooltip .author,
+.auto-tooltip .author {
+  font-weight: 700;
+}
+.auto-tooltip .tooltip-date {
+    text-anchor: end;
+    font-weight: 100;
+}
+.legend .legendBg {
+    fill: #000;
+    fill-opacity: 0.1;
+}
+.legend .legendItem text {
+    font-size: 8pt;
+    fill: #000;
+    font-weight: 100;
+}
+.legend .legendItem .traffic-cell {
+    fill-opacity: 1.0;
+}
+.logo {
+    position: absolute;
+    opacity: 1.0;
+    z-index: 9;
+    width: 25%;
+    margin: 0;
+}
+.logo img {
+    width: 100%;
+}
+.hero-circle {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    position: absolute;
+    border: 1px solid #000;
+    border-radius: 50%;
+    box-shadow: 0 1px 1px rgba(34, 34, 34, 0.3),inset 0 1px 1px rgba(34, 34, 34, 0.3);
+    background: url(../img/bg.png) 0 50%;
+    top: 5px;
+    right: 5px;
+}
+.hero-face {
+    width: 100%;
+    height: 100%;
+}
+.hero-face:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin: -3px 0 0 -3px;
+    background: #000;
+    border-radius: 3px;
+    content: "";
+    display: block;
+}
+.hero-hour {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 -1px -25%;
+    padding: 1px 0 1px 25%;
+    background: #000;
+    -webkit-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    border-radius: 1px 0 0 1px;
+}
+.hero-minute {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -40% -0.75px 0;
+    padding: 40% 0.75px 0;
+    background: #000;
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    border-radius: 0.75px 0.75px 0 0;
+}
+.hero-second {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -40% -0.5px 0 0;
+    padding: 40% 0.5px 0;
+    background: #000;
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+.hero-date {
+    font-weight: 100;
+    font-size: 11px;
+    text-shadow: 1px 1px rgba(34, 34, 34, 0.3);
+    position: absolute;
+    top: 56px;
+    right: 13px;
+}
+.hero-day {
+    font-weight: 600;
+}
